@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="blocks">
+                <form class="forms">
+                    <p class="forms__text forms__text--nomargin">Баланс</p>
+                    <input id="formBalance" disabled value="1000 грн" type="text" class="forms__input-text">
+                    <p class="forms__text">Пиво</p>
+                    <input id="formBeer" disabled value="100 шт." type="text" class="forms__input-text">
+                    <p class="forms__text">Вино</p>
+                    <input id="formWine" disabled value="50 шт." type="text" class="forms__input-text">
+                    <p class="forms__text">Пепсі</p>
+                    <input id="formPepsi" disabled value="80 шт." type="text" class="forms__input-text">
+                </form>
+            </div>
+            <div class="blocks">
+                <form class="forms">
+                    <p class="forms__text forms__text--nomargin">Кількість</p>
+                    <input id="inputText" type="text" class="forms__input-text">
+                    <div class="radio-container">
+                        <label>
+                            <input checked value="beer" name="product" type="radio" class="forms__radio">
+                            <span class="forms__custom-radio"></span>
+                            Пиво
+                        </label>
+                        <label><input value="wine" name="product" type="radio" class="forms__radio">
+                            <span class="forms__custom-radio"></span>
+                            Вино
+                        </label>
+                        <label><input value="pepsi" name="product" type="radio" class="forms__radio">
+                            <span class="forms__custom-radio"></span>
+                            Пепсі
+                        </label>
+                    </div>
+                    <div class="container__button">
+                        <button class="forms__button" id="buttonAdd">Додати</button>
+                    </div>
+                    <div class="textarea">
+                        
+                    </div>
+                    <div class="container__button">
+                        <button disabled class="forms__button" id="buttonBuy">Купити</button>
+                    </div>
+                </form>
+            </div>
+            <div class="blocks blocks--textstyle">
+                <div class="receipt">
+                    
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" class="warning-container">
+            <div class="warning">
+                <p class="warning__text">Вибачте, але на складі залишилося </p>
+                <div class="warning__container">
+                    <button id="closeWarning" class="warning__button">Close</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <script type="module" src="./scripts/shop.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
